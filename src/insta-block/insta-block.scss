@@ -1,0 +1,44 @@
+.insta-block {
+    position: relative;
+    margin-top: -1px;
+    z-index: 100;
+    img {
+        width: 100%;
+    }
+}
+
+.insta-block__info {
+    position: absolute;
+}
+
+.insta-block__caption {
+    position: absolute;
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 49px;
+    font-size: 40px;
+    text-align: center;
+    top: -180px;
+    padding-left: 30vw;
+    width: 500px;
+    color: #FFFFFF;
+}
+
+.insta-block__social-block {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    position: absolute;
+    top: -110px;
+    padding-left: 38vw;
+    img {
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+}

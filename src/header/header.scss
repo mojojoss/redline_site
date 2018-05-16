@@ -1,0 +1,149 @@
+$txt-clr:#343434;
+header {
+    width: 100%;
+    height: 86px;
+    margin-top: 14px;
+    padding: 0 150px;
+    box-sizing: border-box;
+}
+
+//Header top section
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__adress {
+    font-family: "PT Sans";
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    color: $txt-clr;
+}
+
+.header__look-at-the-map {
+    font-family: "PT Sans";
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.phone {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.phone__img {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(phone.png);
+    margin-right: 10px;
+
+}
+
+.phone__number {
+    font-family: "PT Sans";
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    color: $txt-clr;
+}
+
+.phone__request-a-call {
+    font-family: "PT Sans";
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.header__search {
+    background-image: url(search.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+//Header bottom section
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: flex-end;
+}
+
+.header__persona {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.header__navbar {
+    margin: 0;
+    padding: 4px;
+    display: inline-block;
+    li {
+        display: inline-block;
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+        color: #343434;
+        padding: 0 20px;
+    }
+}
+
+.header__signin-box {
+    display: inline-block;
+}
+
+.header__signin-img {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background-image: url(header__signin-img.png);
+}
+
+.header__signin {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #3B3B3B;
+    display: inline-block;
+}
+
+.header__basket-img {
+    background-image: url(basket.png);
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.header__basket-price {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 20px;
+    vertical-align: bottom;
+}

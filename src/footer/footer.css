@@ -1,0 +1,78 @@
+footer {
+    min-height: 318px;
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.footer-subscribe {
+    text-align: center;
+}
+
+.subscribe {
+    font-size: 36px;
+    font-family: "Segoe UI";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.socials a {
+    margin: 0 5px;
+}
+
+.socials a img {
+    margin: 10px 0;
+    transition: transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+}
+
+.socials a img:hover {
+    transform: scale(1.1);
+}
+
+.subscribe-email {
+    font-size: 18px;
+    font-family: "Segoe UI";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 100;
+}
+
+.subscribe-phone {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: "Segoe UI";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 100;
+}
+
+.footer-menu ul {
+    list-style: none;
+}
+
+.footer-menu ul li a {
+    font-size: 16px;
+    font-family: "Segoe UI";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+}
+
+.footer-menu ul li a:hover {
+    color: rgb(248, 102, 119);
+}
+
+.footer-menu ul li {
+    margin-bottom: 5px;
+}

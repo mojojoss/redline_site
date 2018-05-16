@@ -1,0 +1,33 @@
+.advantege {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.__advantege-image {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.__advantege-gift,
+.__advantege-delivery,
+.__advantege-sertificate,
+.__advantege-sheld {
+    height: 79px;
+    display: inline-block;
+    p {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+    }
+}

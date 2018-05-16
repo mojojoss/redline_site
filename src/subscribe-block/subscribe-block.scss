@@ -1,0 +1,74 @@
+.subscribe-block {
+    width: 100%;
+    height: 398px;
+    position: relative;
+    overflow: hidden;
+}
+
+.subscribe-block__caption {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 49px;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: -300px;
+    color: #FFFFFF;
+}
+
+.subscribe-block__name {
+    width: 240px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 400px;
+    padding: 14px 25px;
+    box-sizing: border-box;
+    background-image: url(icon_user.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    position: relative;
+    top: -250px;
+    left: 24%;
+    outline: none;
+}
+
+.subscribe-block__email {
+    width: 240px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 400px;
+    padding: 14px 25px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    background-image: url(icon_mail.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    position: relative;
+    top: -250px;
+    left: 24%;
+    outline: none;
+}
+
+.subscribe-block__button {
+    width: 200px;
+    height: 46px;
+    border: none;
+    background: #343434;
+    border-radius: 400px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-left: 20px;
+    color: #FFFFFF;
+    position: relative;
+    top: -250px;
+    left: 24%;
+    outline: none;
+}

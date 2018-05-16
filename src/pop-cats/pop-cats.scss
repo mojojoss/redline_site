@@ -1,0 +1,117 @@
+.pop-cats__h2{
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 49px;
+    font-size: 40px;
+    text-align: center;
+    color: #343434;
+    margin-top: 100px;
+}
+.pop-cats-wrapper {
+    width: 1146px;
+    height: 975px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "bag bag costume costume"
+                         "bag bag costume costume"
+                         "outerwear pants costume costume"
+                         "outerwear pants footwear footwear";
+    grid-gap: 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+// blocks
+.pop-cats__bag {
+    background-image: url(__pop-cats-images/pop-cat__bag.png);
+    grid-area: bag;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-cats__bag:hover{
+    opacity: 1;
+}
+
+.pop-cats__costume {
+    background-image: url(__pop-cats-images/pop-cat__costume.png);
+    grid-area: costume;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-cats__costume:hover {
+    opacity: 1;
+}
+
+.pop-cats__outerwear {
+    background-image: url(__pop-cats-images/pop-cat__outerwear.png);
+    grid-area: outerwear;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-cats__outerwear:hover{
+    opacity: 1;
+}
+
+.pop-cats__pants {
+    background-image: url(__pop-cats-images/pop-cat__pants.png);
+    grid-area: pants;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-cats__pants:hover{
+    opacity: 1;
+}
+
+.pop-cats__footwear {
+    background-image: url(__pop-cats-images/pop-cat__footwear.png);
+    grid-area: footwear;
+    opacity: 0.5;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-cats__footwear:hover{
+    opacity: 1;
+}
+
+//buttons
+.pop-cats__button{
+    border: none;
+    box-sizing: border-box;
+    width: 226px;
+    height: 62px;
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
+    opacity: 0.8;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 600px;
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #343434;
+    cursor: pointer;
+}

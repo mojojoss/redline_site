@@ -1,0 +1,47 @@
+.product-card
+    .product-card__img-container
+        img(class="product-card__img", src="./src/product-card/product.png")
+        img(class="product-card__heart", src="./src/product-card/product-card__heart.png")
+        img(class="product-card__cols", src="./src/product-card/product-card__cols.png")
+        .product-card__button
+            span Быстрый просмотр
+    .product-card_name-n-brand
+        span Блузка
+        img(src="./src/product-card/product-logo.png")
+    span(class="product-card__price product-card__old-price", data-oldprice="3500 ₽") 2000 ₽
+    .economy(class="price-economy", data-economy="3000 ₽")
+    //size buttons
+    span(class="product-card__color-size-span") Размер
+    form(class="product-card__size-form")
+        label
+            input(type="radio", name="size", checked)
+            span(class="product-card__size-label1, product-card__size-span") XS
+        label
+            input(type="radio", name="size")
+            span(class="product-card__size-label2, product-card__size-span") S
+        label
+            input(type="radio", name="size")
+            span(class="product-card__size-label3, product-card__size-span") M
+        label
+            input(type="radio", name="size")
+            span(class="product-card__size-label4, product-card__size-span") L
+    //color buttons
+    span(class="product-card__color-size-span") Цвет
+    form(class="product-card__color-form")
+        label
+            input(type="radio", name="color", checked)
+            .product-card__color-label1(class="product-card__label")
+        label
+            input(type="radio", name="color")
+            .product-card__color-label2(class="product-card__label")
+        label
+            input(type="radio", name="color")
+            .product-card__color-label3(class="product-card__label")
+        label
+            input(type="radio", name="color")
+            .product-card__color-label4(class="product-card__label")
+    .product-card__number
+        button(class="number-button minus") -
+        input(type="number", min="1", max="10", value="1")
+        button(class="number-button plus") +
+    button(class="product-card__submit-button") В корзину

@@ -1,0 +1,47 @@
+.map__address-list {
+    width: 25%;
+    height: 460px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 30px 40px;
+}
+
+.map {
+    width: 74%;
+    height: 460px;
+    display: inline-block;
+}
+
+.map__address-item {
+    margin-bottom: 30px;
+}
+
+.map__address-name {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+
+    color: #343434;
+}
+
+.map__address-phone {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+
+    color: #343434;
+}
+
+.map__address-local {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(23,79,154,0.15);
+}

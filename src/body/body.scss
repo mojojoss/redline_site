@@ -1,0 +1,16 @@
+$bg-cl:#FFFFFF;
+$txt-link-clr:#174F9A;
+body {
+    width: 100%;
+    background-color: $bg-cl;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: $txt-link-clr;
+}

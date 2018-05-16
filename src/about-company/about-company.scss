@@ -1,0 +1,88 @@
+.about-company {
+    position: relative;
+    display: flex;
+}
+
+.about-company__slider {
+    width: 482px;
+    height: 483px;
+    display: inline-block;
+}
+
+.about-company__prev {
+    position: absolute;
+    height: 484px;
+    width: 68px;
+    display: inline-block;
+    line-height: 484px;
+    color: white;
+    z-index: 100000;
+    text-align: center;
+    font-family: "consolas";
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.about-company__next {
+    position: absolute;
+    height: 484px;
+    width: 68px;
+    display: inline-block;
+    line-height: 484px;
+    color: white;
+    z-index: 1000000;
+    text-align: center;
+    font-family: "consolas";
+    left: 414px;
+    top: 0;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.about-company__info {
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.about-company__caption {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 49px;
+    font-size: 40px;
+
+    color: #343434;
+}
+
+.about-company__text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.about-company__button {
+    width: 226px;
+    height: 46px;
+    background: #343434;
+    border: none;
+    border-radius: 400px;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: #FFFFFF;
+    outline: none;
+    margin-top: 30px;
+}
