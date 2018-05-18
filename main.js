@@ -20,3 +20,5 @@ import './src/insta-block/insta-block.scss';
 import './src/map/map.js';
 import './src/map/map.scss';
 import './src/subscribe-block/subscribe-block.scss';
+import './src/url_parse/url_parse.js';
+import './src/url_parse/table.scss';

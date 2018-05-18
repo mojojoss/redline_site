@@ -33,3 +33,12 @@ html
     include src/insta-block/insta-block
     include src/map/map
     include src/subscribe-block/subscribe-block
+    table(id="table")
+            thead
+                th(data-type="number", data-sort="false", name="index") index
+                th(data-type="string", data-sort="false", name="name") name
+                th(data-type="string", data-sort="false", name="surname") surname
+                th(data-type="string", data-sort="false", name="email") email
+                th(data-type="string", data-sort="false", name="phone") phone
+            tbody(id="tbody")
+    #tr-info

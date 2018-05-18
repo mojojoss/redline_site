@@ -1,1 +1,931 @@
-<!DOCTYPE html> <html> <head> <meta charset=utf-8> <title>Landing</title> <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script> <link href=./build/styles.css rel=stylesheet> <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel=stylesheet type=text/css> <style type=text/css>@font-face{font-family:"Lato Black";src:url(main/__fonts/Lato-Black/Lato-Black.eot?) format("eot"),url(main/__fonts/Lato-Black/Lato-Black.woff) format("woff"),url(main/__fonts/Lato-Black/Lato-Black.ttf) format("truetype"),url(main/__fonts/Lato-Black/Lato-Black.svg#Lato-Black) format("svg");font-weight:400;font-style:normal}</style> <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.0.10/css/all.css integrity=sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg crossorigin=anonymous> <link rel=stylesheet type=text/css href=//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css> <script src=//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js></script> <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <link href="styles.css" rel="stylesheet"></head> <body> <header> <div class=header__top> <div><span class=header__address>г. Абакан, ул. Дружбы Народов, 40</span><a class=header__look-at-the-map href=#>Посмотреть на карте</a></div> <div> <div class=phone> <div class=phone__img></div><span class=phone__number>8 (390) 229-78-41</span><a class=phone__request-a-call href=#>Заказать звонок</a> </div> <div class=header__search></div> </div> </div> <div class=header__bottom><span class=header__persona>persona</span> <ul class=header__navbar><a href=#> <li>Новые коллекции</li></a><a href=#> <li>Скидки</li></a><a href=#> <li>Как купить</li></a><a href=#> <li>Контакты</li></a></ul> <div style=display:flex> <div class=header__signin-box> <div class=header__signin-img></div><a class=header__signin href=#>Войти</a> </div> <div class=header__basket> <div class="header__basket-img header__basket-img_quantity"></div><span class=header__basket-price>2000 ₽</span> </div> </div> </div> </header> <div class=main-screen> <p class=main-screen__caption>Стиль и элегантность<br>вместе с PERSONA</p> <p class=main-screen__caption2>Лучшие бренды и качество<br>подчеркнут твою индивидуальность</p> <button class=main-screen__button>Смотреть каталог</button><img class=main-screen__jacket2 src=img/main-screen__jacket2.png><img class=main-screen__jacket1 src=img/main-screen__jacket1.png><img class=main-screen__hat src=img/main-screen__hat.png><img class=main-screen__bag src=img/main-screen__bag.png> </div> <div class=advantege> <div class=__advantege-gift><img class=__advantege-image src=img/__advantege-gift.png> <p>Подарочные<br>сертификаты</p> </div> <div class=__advantege-sheld><img class=__advantege-image src=img/__advantege-sheld.png> <p>Весь товар<br>сертифицирован</p> </div> <div class=__advantege-delivery><img class=__advantege-image src=img/__advantege-delivery.png> <p>Весь товар<br>сертифицирован</p> </div> <div class=__advantege-sertificate><img class=__advantege-image src=img/__advantege-sertificate.png> <p>Удобная<br>и быстрая доставка</p> </div> </div> <h2 class=pop-cats__h2>Популярные категории</h2> <div class=pop-cats-wrapper> <div class=pop-cats__bag> <button class=pop-cats__button>Сумки</button> </div> <div class=pop-cats__costume> <button class=pop-cats__button>Костюмы</button> </div> <div class=pop-cats__outerwear> <button class=pop-cats__button>Верхняя одежда</button> </div> <div class=pop-cats__pants> <button class=pop-cats__button>Брюки</button> </div> <div class=pop-cats__footwear> <button class=pop-cats__button>Обувь</button> </div> </div> <div class=brands-slider><img src=img/brands-images__barbara.png><img src=img/brands-images__Lerros.png><img src=img/brands-images__MM-Studio.png><img src=img/brands-images__MM-Weekend.png><img src=img/brands-images__via.png><img src=img/brands-images__zerres.png></div> <h2 class=pop-cats__h2>Новинки</h2> <div class=product-card-container> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> </div> <div class=baner-container> <div class=baner><span class=baner__caption>Новая коллекция</span><span class=baner__text>Стильные новинки весны 2018</span> <button class=baner__button>Смотреть</button> </div> </div> <h2 class=pop-cats__h2>Скидки</h2> <div class=product-card-container> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> <div class=product-card> <div class=product-card__img-container><img class=product-card__img src=img/product.png><img class=product-card__heart src=img/product-card__heart.png><img class=product-card__cols src=img/product-card__cols.png> <div class=product-card__button><span>Быстрый просмотр</span></div> </div> <div class=product-card_name-n-brand><span>Блузка</span><img src=img/product-logo.png></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span> <div class="economy price-economy" data-economy="3000 ₽"></div> <span class=product-card__color-size-span>Размер</span> <form class=product-card__size-form> <label> <input type=radio name=size checked=checked><span class="product-card__size-label1, product-card__size-span">XS</span> </label> <label> <input type=radio name=size><span class="product-card__size-label2, product-card__size-span">S</span> </label> <label> <input type=radio name=size><span class="product-card__size-label3, product-card__size-span">M</span> </label> <label> <input type=radio name=size><span class="product-card__size-label4, product-card__size-span">L</span> </label> </form> <span class=product-card__color-size-span>Цвет</span> <form class=product-card__color-form> <label> <input type=radio name=color checked=checked> <div class="product-card__color-label1 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label2 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label3 product-card__label"></div> </label> <label> <input type=radio name=color> <div class="product-card__color-label4 product-card__label"></div> </label> </form> <div class=product-card__number> <button class="number-button minus">-</button> <input type=number min=1 max=10 value=1> <button class="number-button plus">+</button> </div> <button class=product-card__submit-button>В корзину</button> </div> </div> <div class=review-slider__container> <h2 class=review-slider__h2>Отзывы</h2> <div class=review-slider> <div class=review-slider__review><img src=img/photo-review.png> <div class=slider-review__info><span class=slider-review__name>Александр Передерей</span><br><span class=slider-review__date>18 декабря 2016</span><br><br><a class=slider-review__link href=#> Перейти к отзыву <span>→</span></a></div> <p class=review-slider__text>Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p> </div> <div class=review-slider__review><img src=img/photo-review.png> <div class=slider-review__info><span class=slider-review__name>Александр Передерей</span><br><span class=slider-review__date>18 декабря 2016</span><br><br><a class=slider-review__link href=#> Перейти к отзыву <span>→</span></a></div> <p class=review-slider__text>Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p> </div> <div class=review-slider__review><img src=img/photo-review.png> <div class=slider-review__info><span class=slider-review__name>Александр Передерей</span><br><span class=slider-review__date>18 декабря 2016</span><br><br><a class=slider-review__link href=#> Перейти к отзыву <span>→</span></a></div> <p class=review-slider__text>Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p> </div> <div class=review-slider__review><img src=img/photo-review.png> <div class=slider-review__info><span class=slider-review__name>Александр Передерей</span><br><span class=slider-review__date>18 декабря 2016</span><br><br><a class=slider-review__link href=#> Перейти к отзыву <span>→</span></a></div> <p class=review-slider__text>Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p> </div> <div class=review-slider__review><img src=img/photo-review.png> <div class=slider-review__info><span class=slider-review__name>Александр Передерей</span><br><span class=slider-review__date>18 декабря 2016</span><br><br><a class=slider-review__link href=#> Перейти к отзыву <span>→</span></a></div> <p class=review-slider__text>Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p> </div> <div class=review-slider__review><img src=img/photo-review.png> <div class=slider-review__info><span class=slider-review__name>Александр Передерей</span><br><span class=slider-review__date>18 декабря 2016</span><br><br><a class=slider-review__link href=#> Перейти к отзыву <span>→</span></a></div> <p class=review-slider__text>Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p> </div> <div class=review-slider__review><img src=img/photo-review.png> <div class=slider-review__info><span class=slider-review__name>Александр Передерей</span><br><span class=slider-review__date>18 декабря 2016</span><br><br><a class=slider-review__link href=#> Перейти к отзыву <span>→</span></a></div> <p class=review-slider__text>Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p> </div> </div> <button class=review-slider__button>Оставить отзыв</button> </div> <div class=about-company> <div class=about-company__slider><img src=img/about-company__img.png><img src=img/about-company__img.png><img src=img/about-company__img.png><img src=img/about-company__img.png></div> <div class=about-company__info><span class=about-company__caption>О компании</span> <p class=about-company__text>Donec eget diam sagittis, vehicula purus nec, vulputate eros. Nulla facilisi. Suspendisse egestas bibendum cursus. Cras elementum ligula eget euismod feugiat. Nunc nec eros non diam eleifend tincidunt et a velit. Sed nisl libero, vestibulum vitae turpis id, vulputate ultrices leo. Cras et est eget lectus blandit cursus vehicula at ligula. Etiam auctor, quam ornare iaculis malesuada, tellus sem egestas felis, vitae euismod eros mi eget urna. Sed turpis sem, semper quis ligula vel, consequat hendrerit sapien. Ut pharetra mollis nulla vehicula laoreet. Ut aliquet ultrices turpis, at vehicula lorem blandit in. Donec in urna at arcu consequat imperdiet eget quis leo. Fusce at sapien efficitur, tincidunt odio sit amet, aliquam risus.</p> <button class=about-company__button>Узнать больше</button> </div> </div> <div class=insta-block><img src=img/insta-block.png> <div class=insta-block__info><span class=insta-block__caption>Следуй за нами в соцсети</span> <div class=insta-block__social-block><img src=img/vk.png><img src=img/fb.png><img src=img/ok.png><img src=img/inst.png></div> </div> </div> <div class=map-container> <div class=map__address-list> <div class=map__address-item><span class=map__address-name>Виктор</span><br><span class=map__address-phone>8 (390) 229-78-41</span><br><a class=map__address-local href=#>г. Абакан, ул. Дружбы Народов, 39</a></div> <div class=map__address-item><span class=map__address-name>Виктор</span><br><span class=map__address-phone>8 (390) 229-78-41</span><br><a class=map__address-local href=#>г. Абакан, ул. Дружбы Народов, 39</a></div> <div class=map__address-item><span class=map__address-name>Виктор</span><br><span class=map__address-phone>8 (390) 229-78-41</span><br><a class=map__address-local href=#>г. Абакан, ул. Дружбы Народов, 39</a></div> <div class=map__address-item><span class=map__address-name>Виктор</span><br><span class=map__address-phone>8 (390) 229-78-41</span><br><a class=map__address-local href=#>г. Абакан, ул. Дружбы Народов, 39</a></div> </div> <div class=map id=map></div> </div> <div class=subscribe-block><img class=subscribe-block src=img/subscribe-block.png> <h2 class=subscribe-block__caption>Подпишись на новинки и акции</h2> <form class=.subscribe-block__form> <input class=subscribe-block__name type=text placeholder="Ваше имя"> <input class=subscribe-block__email type=email placeholder="Ваш email"> <input class=subscribe-block__button type=submit value=Подписаться> </form> </div> <script type="text/javascript" src="index.bundle.js"></script></body> </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Landing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="./build/styles.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      @font-face {
+      font-family: "Lato Black";
+      src: url("./main/__fonts/Lato-Black/Lato-Black.eot?") format("eot"), url("./main/__fonts/Lato-Black/Lato-Black.woff") format("woff"), url("./main/__fonts/Lato-Black/Lato-Black.ttf") format("truetype"), url("./main/__fonts/Lato-Black/Lato-Black.svg#Lato-Black") format("svg");
+      font-weight: normal;
+      font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <link href="styles.css" rel="stylesheet"></head>
+  <body>
+    <header>
+      <div class="header__top">
+        <div><span class="header__address">г. Абакан, ул. Дружбы Народов, 40</span><a class="header__look-at-the-map" href="#">Посмотреть на карте</a></div>
+        <div>
+          <div class="phone">
+            <div class="phone__img"></div><span class="phone__number">8 (390) 229-78-41</span><a class="phone__request-a-call" href="#">Заказать звонок</a>
+          </div>
+          <div class="header__search"></div>
+        </div>
+      </div>
+      <div class="header__bottom"><span class="header__persona">persona</span>
+        <ul class="header__navbar"><a href="#">
+            <li>Новые коллекции</li></a><a href="#">
+            <li>Скидки</li></a><a href="#">
+            <li>Как купить</li></a><a href="#">
+            <li>Контакты</li></a></ul>
+        <div style="display:flex;">
+          <div class="header__signin-box">
+            <div class="header__signin-img"></div><a class="header__signin" href="#">Войти</a>
+          </div>
+          <div class="header__basket">
+            <div class="header__basket-img header__basket-img_quantity"></div><span class="header__basket-price">2000 ₽</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-screen">
+      <p class="main-screen__caption">Стиль и элегантность<br>вместе с PERSONA</p>
+      <p class="main-screen__caption2">Лучшие бренды и качество<br>подчеркнут твою индивидуальность</p>
+      <button class="main-screen__button">Смотреть каталог</button><img class="main-screen__jacket2" src="img/main-screen__jacket2.png"><img class="main-screen__jacket1" src="img/main-screen__jacket1.png"><img class="main-screen__hat" src="img/main-screen__hat.png"><img class="main-screen__bag" src="img/main-screen__bag.png">
+    </div>
+    <div class="advantege">
+      <div class="__advantege-gift"><img class="__advantege-image" src="img/__advantege-gift.png">
+        <p>Подарочные<br>сертификаты</p>
+      </div>
+      <div class="__advantege-sheld"><img class="__advantege-image" src="img/__advantege-sheld.png">
+        <p>Весь товар<br>сертифицирован</p>
+      </div>
+      <div class="__advantege-delivery"><img class="__advantege-image" src="img/__advantege-delivery.png">
+        <p>Весь товар<br>сертифицирован</p>
+      </div>
+      <div class="__advantege-sertificate"><img class="__advantege-image" src="img/__advantege-sertificate.png">
+        <p>Удобная<br>и быстрая доставка</p>
+      </div>
+    </div>
+    <h2 class="pop-cats__h2">Популярные категории</h2>
+    <div class="pop-cats-wrapper">
+      <div class="pop-cats__bag">
+        <button class="pop-cats__button">Сумки</button>
+      </div>
+      <div class="pop-cats__costume">
+        <button class="pop-cats__button">Костюмы</button>
+      </div>
+      <div class="pop-cats__outerwear">
+        <button class="pop-cats__button">Верхняя одежда</button>
+      </div>
+      <div class="pop-cats__pants">
+        <button class="pop-cats__button">Брюки</button>
+      </div>
+      <div class="pop-cats__footwear">
+        <button class="pop-cats__button">Обувь</button>
+      </div>
+    </div>
+    <div class="brands-slider"><img src="img/brands-images__barbara.png"><img src="img/brands-images__Lerros.png"><img src="img/brands-images__MM-Studio.png"><img src="img/brands-images__MM-Weekend.png"><img src="img/brands-images__via.png"><img src="img/brands-images__zerres.png"></div>
+    <h2 class="pop-cats__h2">Новинки</h2>
+    <div class="product-card-container">
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+    </div>
+    <div class="baner-container">
+      <div class="baner"><span class="baner__caption">Новая коллекция</span><span class="baner__text">Стильные новинки весны 2018</span>
+        <button class="baner__button">Смотреть</button>
+      </div>
+    </div>
+    <h2 class="pop-cats__h2">Скидки</h2>
+    <div class="product-card-container">
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+      <div class="product-card">
+        <div class="product-card__img-container"><img class="product-card__img" src="img/product.png"><img class="product-card__heart" src="img/product-card__heart.png"><img class="product-card__cols" src="img/product-card__cols.png">
+          <div class="product-card__button"><span>Быстрый просмотр</span></div>
+        </div>
+        <div class="product-card_name-n-brand"><span>Блузка</span><img src="img/product-logo.png"></div><span class="product-card__price product-card__old-price" data-oldprice="3500 ₽">2000 ₽</span>
+        <div class="economy price-economy" data-economy="3000 ₽"></div>
+        <!--size buttons--><span class="product-card__color-size-span">Размер</span>
+        <form class="product-card__size-form">
+          <label>
+            <input type="radio" name="size" checked><span class="product-card__size-label1, product-card__size-span">XS</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label2, product-card__size-span">S</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label3, product-card__size-span">M</span>
+          </label>
+          <label>
+            <input type="radio" name="size"><span class="product-card__size-label4, product-card__size-span">L</span>
+          </label>
+        </form>
+        <!--color buttons--><span class="product-card__color-size-span">Цвет</span>
+        <form class="product-card__color-form">
+          <label>
+            <input type="radio" name="color" checked>
+            <div class="product-card__color-label1 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label2 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label3 product-card__label"></div>
+          </label>
+          <label>
+            <input type="radio" name="color">
+            <div class="product-card__color-label4 product-card__label"></div>
+          </label>
+        </form>
+        <div class="product-card__number">
+          <button class="number-button minus">-</button>
+          <input type="number" min="1" max="10" value="1">
+          <button class="number-button plus">+</button>
+        </div>
+        <button class="product-card__submit-button">В корзину</button>
+      </div>
+    </div>
+    <div class="review-slider__container">
+      <h2 class="review-slider__h2">Отзывы</h2>
+      <div class="review-slider">
+        <div class="review-slider__review"><img src="img/photo-review.png">
+          <div class="slider-review__info"><span class="slider-review__name">Александр Передерей</span><br><span class="slider-review__date">18 декабря 2016</span><br><br><a class="slider-review__link" href="#">
+               Перейти к отзыву <span>→</span></a></div>
+          <p class="review-slider__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p>
+        </div>
+        <div class="review-slider__review"><img src="img/photo-review.png">
+          <div class="slider-review__info"><span class="slider-review__name">Александр Передерей</span><br><span class="slider-review__date">18 декабря 2016</span><br><br><a class="slider-review__link" href="#">
+               Перейти к отзыву <span>→</span></a></div>
+          <p class="review-slider__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p>
+        </div>
+        <div class="review-slider__review"><img src="img/photo-review.png">
+          <div class="slider-review__info"><span class="slider-review__name">Александр Передерей</span><br><span class="slider-review__date">18 декабря 2016</span><br><br><a class="slider-review__link" href="#">
+               Перейти к отзыву <span>→</span></a></div>
+          <p class="review-slider__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p>
+        </div>
+        <div class="review-slider__review"><img src="img/photo-review.png">
+          <div class="slider-review__info"><span class="slider-review__name">Александр Передерей</span><br><span class="slider-review__date">18 декабря 2016</span><br><br><a class="slider-review__link" href="#">
+               Перейти к отзыву <span>→</span></a></div>
+          <p class="review-slider__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p>
+        </div>
+        <div class="review-slider__review"><img src="img/photo-review.png">
+          <div class="slider-review__info"><span class="slider-review__name">Александр Передерей</span><br><span class="slider-review__date">18 декабря 2016</span><br><br><a class="slider-review__link" href="#">
+               Перейти к отзыву <span>→</span></a></div>
+          <p class="review-slider__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p>
+        </div>
+        <div class="review-slider__review"><img src="img/photo-review.png">
+          <div class="slider-review__info"><span class="slider-review__name">Александр Передерей</span><br><span class="slider-review__date">18 декабря 2016</span><br><br><a class="slider-review__link" href="#">
+               Перейти к отзыву <span>→</span></a></div>
+          <p class="review-slider__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p>
+        </div>
+        <div class="review-slider__review"><img src="img/photo-review.png">
+          <div class="slider-review__info"><span class="slider-review__name">Александр Передерей</span><br><span class="slider-review__date">18 декабря 2016</span><br><br><a class="slider-review__link" href="#">
+               Перейти к отзыву <span>→</span></a></div>
+          <p class="review-slider__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</p>
+        </div>
+      </div>
+      <button class="review-slider__button">Оставить отзыв</button>
+    </div>
+    <div class="about-company">
+      <div class="about-company__slider"><img src="img/about-company__img.png"><img src="img/about-company__img.png"><img src="img/about-company__img.png"><img src="img/about-company__img.png"></div>
+      <div class="about-company__info"><span class="about-company__caption">О компании</span>
+        <p class="about-company__text">Donec eget diam sagittis, vehicula purus nec, vulputate eros. Nulla facilisi. Suspendisse egestas bibendum cursus. Cras elementum ligula eget euismod feugiat. Nunc nec eros non diam eleifend tincidunt et a velit. Sed nisl libero, vestibulum vitae turpis id, vulputate ultrices leo. Cras et est eget lectus blandit cursus vehicula at ligula. Etiam auctor, quam ornare iaculis malesuada, tellus sem egestas felis, vitae euismod eros mi eget urna. Sed turpis sem, semper quis ligula vel, consequat hendrerit sapien. Ut pharetra mollis nulla vehicula laoreet. Ut aliquet ultrices turpis, at vehicula lorem blandit in. Donec in urna at arcu consequat imperdiet eget quis leo. Fusce at sapien efficitur, tincidunt odio sit amet, aliquam risus.</p>
+        <button class="about-company__button">Узнать больше</button>
+      </div>
+    </div>
+    <div class="insta-block"><img src="img/insta-block.png">
+      <div class="insta-block__info"><span class="insta-block__caption">Следуй за нами в соцсети</span>
+        <div class="insta-block__social-block"><img src="img/vk.png"><img src="img/fb.png"><img src="img/ok.png"><img src="img/inst.png"></div>
+      </div>
+    </div>
+    <div class="map-container">
+      <div class="map__address-list">
+        <div class="map__address-item"><span class="map__address-name">Виктор</span><br><span class="map__address-phone">8 (390) 229-78-41</span><br><a class="map__address-local" href="#">г. Абакан, ул. Дружбы Народов, 39</a></div>
+        <div class="map__address-item"><span class="map__address-name">Виктор</span><br><span class="map__address-phone">8 (390) 229-78-41</span><br><a class="map__address-local" href="#">г. Абакан, ул. Дружбы Народов, 39</a></div>
+        <div class="map__address-item"><span class="map__address-name">Виктор</span><br><span class="map__address-phone">8 (390) 229-78-41</span><br><a class="map__address-local" href="#">г. Абакан, ул. Дружбы Народов, 39</a></div>
+        <div class="map__address-item"><span class="map__address-name">Виктор</span><br><span class="map__address-phone">8 (390) 229-78-41</span><br><a class="map__address-local" href="#">г. Абакан, ул. Дружбы Народов, 39</a></div>
+      </div>
+      <div class="map" id="map"></div>
+    </div>
+    <div class="subscribe-block"><img class="subscribe-block" src="img/subscribe-block.png">
+      <h2 class="subscribe-block__caption">Подпишись на новинки и акции</h2>
+      <form class=".subscribe-block__form">
+        <input class="subscribe-block__name" type="text" placeholder="Ваше имя">
+        <input class="subscribe-block__email" type="email" placeholder="Ваш email">
+        <input class="subscribe-block__button" type="submit" value="Подписаться">
+      </form>
+    </div>
+    <table id="table">
+      <thead>
+        <th data-type="number" data-sort="false" name="index">index</th>
+        <th data-type="string" data-sort="false" name="name">name</th>
+        <th data-type="string" data-sort="false" name="surname">surname</th>
+        <th data-type="string" data-sort="false" name="email">email</th>
+        <th data-type="string" data-sort="false" name="phone">phone</th>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  <script type="text/javascript" src="index.bundle.js"></script></body>
+</html>
